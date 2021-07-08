@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24243e</color>
+    <color name="colorPrimaryDark">#5D4037</color>
+    <color name="colorAccent">#A5A4Af</color>
+    <color name="sd">#D81B60</color>
+    <color name="colorpurple">#673AB7</color>"
+    <color name="colorskyblue">#80D8FF</color>
+    <color name="colorblue">#00B0FF</color>
+    <color name="colorGreen">#00E5FF</color>
+    <color name="colorbluegrey">#245A64</color>
+    <color name="colorbg">#263547</color>
+    <color name="bluedark">#2f333f</color>
+    <color name="bluelight">#49acd5</color>
+    <color name="green">#45bc62</color>
+    <color name="orange">#eaad43</color>
+
+    <color name="primary">#795548</color>
+    <color name="primarydark">#5D4037</color>
+    <color name="white">#ffffff</color>
+    <color name="darkgrey">#6c6c6c</color>
+
+
+    <color name="background">#2B2B49</color>
+    <color name="textfield">#353552</color>
+    <color name="textfieldfont">#A5A4Af</color>
+    <color name="bgdarker">#24243e</color>
+    <color name="button">#02D8C6</color>
+    <color name="available">#43A047</color>
+    <color name="unavailable">#F44336</color>
+    <color name="usnavailable">#FF7043</color>
+    <color name="colorPrimaryyellow">#FFC107</color>
+    <color name="colorPrimaryDarkyellow">#FFA000</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="pinky">#FF4081</color>
+    <color name="yellow">#ffb300</color>
+    <color name="greens">#00bfa5</color>
+
+
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">DaYJoB</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="usertype">
+        <item>Employee</item>
+        <item>Hirer</item>
+    </string-array>
+
+    <string-array name="skill">
+        <item>Carpentry</item>
+        <item>Construction</item>
+        <item>Tile</item>
+        <item>Cleaning</item>
+        <item>Plumber</item>
+        <item>Painter</item>
+        <item>Electrician</item>
+        <item>Gardener</item>
+        <item>Metal Work</item>
+        <item>Web Designer</item>
+        <item>Photographer</item>
+        <item>Teacher</item>
+        <item>Farmer</item>
+        <item>Appliance Repair</item>
+        <item>Computer Software</item>
+        <item>Computer Hardware</item>
+        <item>Chef</item>
+        <item>Waiter</item>
+        <item>Dish Washer</item>
+        <item>Bartender</item>
+        <item>Tailor</item>
+        <item>Health and Fitness</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="experiance">
+        <item>1 Years</item>
+        <item>1.5 Years</item>
+        <item>2 Years</item>
+        <item>3 Years</item>
+        <item>4 Years</item>
+        <item>5 Years</item>
+        <item>6 Years</item>
+        <item>7 Years</item>
+        <item>8 Years</item>
+        <item>9 Years</item>
+        <item>10 Years</item>
+        <item>11 Years</item>
+        <item>12 Years</item>
+        <item>13 Years</item>
+        <item>14 Years</item>
+        <item>15 Years</item>
+    </string-array>
+
+    <string-array name="payment">
+        <item>Cash Only</item>
+        <item>Check Only</item>
+        <item>Cash or Check</item>
+    </string-array>
+
+    <string-array name="workingday">
+        <item>Week Days Only</item>
+        <item>7 days a week</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_location">Map</string>
+
+
+</resources>
+
+
+
