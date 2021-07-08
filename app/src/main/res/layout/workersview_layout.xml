@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="8dp"
+        android:background="@drawable/dashboard">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/imageicon" />
+
+        <TextView
+            android:id="@+id/Tvfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/textfieldfont"
+            android:hint="Sujan Maharjan"
+            />
+
+
+        <ImageView
+            android:id="@+id/Tvphone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:src="@drawable/call2"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/Tvcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/Tvfirstname"
+            android:textSize="20sp"
+            android:hint="600/hr"
+            android:textColor="@color/textfieldfont"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/favimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:src="@drawable/favicon"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Tvfirstname"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/Tvskill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/Tvcost"
+            android:textColor="@color/textfieldfont"
+            android:textSize="17sp"
+            android:hint="Carpentry"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/Tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/textfieldfont"
+            android:layout_below="@+id/Tvskill"
+            android:textSize="17sp"
+            android:hint="address"
+            />
+
+        <TextView
+            android:id="@+id/Tvjob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/textfieldfont"
+            android:layout_below="@+id/Tvaddress"
+            android:textSize="15sp"
+            android:hint="Pumber, Tile Work"
+
+            />
+
+        <TextView
+            android:id="@+id/Tvavail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:layout_below="@+id/Tvjob"
+            android:textSize="15sp"
+            android:hint="Available"
+
+            />
+
+
+    </RelativeLayout>

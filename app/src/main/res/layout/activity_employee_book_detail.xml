@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EmployeeBookDetailActivity"
+    android:layout_marginTop="18dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="8dp"
+    android:background="@drawable/dashboard">
+
+    <TextView
+        android:id="@+id/employeebookid"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hirerimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/imageicon" />
+
+    <TextView
+        android:id="@+id/tvhirerfirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hirerimage"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/textfieldfont"
+        android:hint="Hirer Sujan Maharjan"
+        />
+
+
+    <ImageView
+        android:id="@+id/tvhirerphone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:src="@drawable/call2"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvhirerfirstname"
+        android:layout_toRightOf="@+id/hirerimage"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/messages" />
+
+    <TextView
+        android:id="@+id/Tvhireremailes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="@color/textfieldfont"
+        android:text="Serenadesan10@gmail.com"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@id/tvhirerfirstname"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/hirerimage"
+        app:srcCompat="@drawable/address2" />
+
+    <TextView
+        android:id="@+id/Tvhireraddresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/textfieldfont"
+        android:textSize="16dp"
+        android:text="Sunakothi, Lalitpur"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_below="@+id/imageView"
+        />
+
+
+
+    <TextView
+        android:id="@+id/Tvemployeeavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hirerimage"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:layout_below="@+id/imageView5"
+        android:textSize="15sp"
+        android:hint="Available"
+
+        />
+
+    <TextView
+        android:id="@+id/Tvemployeestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Tvemployeeavailable"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginStart="15dp"
+        android:textSize="15sp"
+        android:hint="Status"
+        />
+
+    <CheckBox
+        android:id="@+id/edt_bookavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:padding="5dp"
+        android:textSize="15dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:layout_below="@+id/Tvemployeeavailable"
+        android:layout_toRightOf="@+id/hirerimage"
+        android:checked="true"
+        />
+
+    <CheckBox
+        android:id="@+id/edt_bookstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:padding="5dp"
+        android:textSize="15dp"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/Tvemployeestatus"
+        android:layout_toRightOf="@+id/edt_bookavailable"
+        android:textColorHint="@color/colorAccent"
+        android:checked="true"
+        />
+    <Button
+        android:id="@+id/updateBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/button"
+        android:text="Update"
+        android:drawableLeft="@drawable/ic_update_black_24dp"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:layout_below="@+id/edt_bookavailable"
+        android:layout_toRightOf="@+id/hirerimage"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/Tvavailablestore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateBook"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/Tvstatusstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateBook"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

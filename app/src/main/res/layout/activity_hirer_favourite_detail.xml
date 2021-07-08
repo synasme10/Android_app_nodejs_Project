@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HirerFavouriteDetail"
+    android:layout_marginTop="18dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:padding="8dp"
+    android:background="@drawable/dashboard">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Ivfavimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/imageicon" />
+
+    <TextView
+        android:id="@+id/tvfavname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textfieldfont"
+        android:hint="Sujan Maharjan"
+        />
+
+
+    <ImageView
+        android:id="@+id/Tvfavphone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="right"
+        android:src="@drawable/call2"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/Tvfavcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        android:layout_below="@+id/tvfavname"
+        android:textSize="20sp"
+        android:hint="600/hr"
+        android:textColor="@color/textfieldfont"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/Tvfavskill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        android:layout_below="@+id/Tvfavcost"
+        android:textColor="@color/textfieldfont"
+        android:textSize="17sp"
+        android:hint="Carpentry"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Tvfavaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        android:textColor="@color/textfieldfont"
+        android:layout_below="@+id/Tvfavskill"
+        android:textSize="17sp"
+        android:hint="address"
+        />
+
+    <TextView
+        android:id="@+id/Tvfavjob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        android:textColor="@color/textfieldfont"
+        android:layout_below="@+id/Tvfavaddress"
+        android:textSize="15sp"
+        android:hint="Pumber, Tile Work"
+
+        />
+
+    <TextView
+        android:id="@+id/Ivfavavailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/Tvfavjob"
+        android:textSize="15sp"
+        android:hint="Available"
+
+        />
+
+
+    <Button
+        android:id="@+id/deletefav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:text="DELETE"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_delete_black_24dp"
+        android:layout_below="@+id/Ivfavavailable"
+        android:layout_toRightOf="@+id/Ivfavimage"
+        />
+    <TextView
+        android:id="@+id/favouriteid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/deletefav"
+        />
+</RelativeLayout>
+

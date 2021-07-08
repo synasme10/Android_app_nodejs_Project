@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/etuserid"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/Ivbackbutton"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbutton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:text="Update Profile"
+                android:textStyle="bold"
+                android:textColor="#fff"
+
+                android:textSize="27sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivuserimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity=""
+                android:background="@drawable/imageicon"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/Etfn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="First Name"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/edittext"
+                    android:textColorHint="@color/colorAccent"
+                    >
+
+                    <EditText
+                        android:id="@+id/Etln"
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorAccent"
+                >
+                <EditText
+                    android:id="@+id/Etpn"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorAccent"
+
+                >
+
+                <EditText
+                    android:id="@+id/etstate"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="State"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorAccent">
+                <EditText
+                    android:id="@+id/etcitys"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="City"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/etaddresses"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Address"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    android:inputType="text"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gender"
+
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Spinner
+                android:id="@+id/genderss_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:theme="@style/Spinner"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnupdateregister"
+            android:layout_width="250dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+                android:textStyle="bold"
+            android:text="Update Your Profile"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

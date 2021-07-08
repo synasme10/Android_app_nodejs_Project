@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/Imgback"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbutton" />
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Ivimageprofile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/imageicon"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <TextView
+        android:id="@+id/Tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/Ivimageprofile"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/Tvworkdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:text="Cost and job and experiance"
+        android:textSize="18dp"
+        android:layout_below="@+id/Tvname"
+        android:layout_centerHorizontal="true"
+ />
+
+    <TextView
+        android:id="@+id/Tvjob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:text="skills and job completed"
+        android:textSize="16dp"
+        android:layout_below="@+id/Tvworkdetail"
+        android:layout_centerHorizontal="true"
+      />
+    <Button
+        android:id="@+id/Btnpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:text=" Days,Cash or Check"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/Tvjob"
+        android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:id="@+id/Tvlang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Nepali, Hindi"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/Btnpay"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <ImageView
+        android:id="@+id/imagecall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/call2"
+        android:layout_below="@+id/Tvlang"
+
+        />
+
+    <TextView
+        android:id="@+id/Tvphonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="9849248922"
+        android:textSize="15dp"
+        android:layout_below="@+id/Tvlang"
+
+        android:layout_toRightOf="@id/imagecall"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Mobile"
+        android:textColor="#fff"
+        android:layout_below="@id/Tvphonenumber"
+        android:layout_toRightOf="@+id/imagecall"
+
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="15dp"
+     android:layout_below="@+id/imagecall"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/messages" />
+
+    <TextView
+        android:id="@+id/Tvemails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:text="Serenadesan10@gmail.com"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@id/imagecall"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="5dp"
+       android:layout_below="@+id/imageView"
+        app:srcCompat="@drawable/address2" />
+
+    <TextView
+        android:id="@+id/Tvaddresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:text="Sunakothi, Lalitpur"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_below="@+id/imageView"
+        />
+
+    <Button
+        android:id="@+id/Btnhire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:text="Hire Me"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+
+        />
+    </RelativeLayout>
+</ScrollView>

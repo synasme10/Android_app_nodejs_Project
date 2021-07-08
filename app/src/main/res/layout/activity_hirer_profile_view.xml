@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HirerProfileViewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/Imgback"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbutton" />
+        </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Ivhirerprofile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/imageicon"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/Tvhirernames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/Ivhirerprofile"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/Tvhirergens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="Gender"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/Tvhirernames"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imagecall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/call2"
+        android:layout_below="@+id/Tvhirergens"
+
+        />
+
+    <TextView
+        android:id="@+id/Tvhirerphonenumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="9849248922"
+        android:textSize="15dp"
+        android:layout_below="@+id/Tvhirergens"
+
+        android:layout_toRightOf="@id/imagecall"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Mobile"
+        android:textColor="#fff"
+        android:layout_below="@id/Tvhirerphonenumbers"
+        android:layout_toRightOf="@+id/imagecall"
+
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/imagecall"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/messages" />
+
+    <TextView
+        android:id="@+id/Tvhireremailes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:text="Serenadesan10@gmail.com"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@id/imagecall"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/imageView"
+        app:srcCompat="@drawable/address2" />
+
+    <TextView
+        android:id="@+id/Tvhireraddresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:text="Sunakothi, Lalitpur"
+        android:layout_toRightOf="@+id/imageView5"
+        android:layout_below="@+id/imageView"
+        />
+
+    <Button
+        android:id="@+id/btnhirerupdateprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Update Profile"
+        android:textSize="15dp"
+        android:padding="10dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/imageView5"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+
+        />
+    </RelativeLayout>
+</ScrollView>

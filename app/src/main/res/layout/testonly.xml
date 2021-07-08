@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".WorkerActivity"
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/Imgback"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbutton" />
+
+            <TextView
+                android:layout_width="156dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_gravity="center"
+                android:text="Work Detail"
+                android:textColor="#fff"
+
+                android:textSize="27sp" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Work Detail"
+                android:textSize="17sp"
+                android:layout_marginLeft="8sp"/>
+            <Spinner
+                android:id="@+id/skill_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Skills" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Spinner
+                android:id="@+id/experiance_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Skills"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etjob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Job Completed"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Language"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Spinner
+                android:id="@+id/payment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:autofillHints="Payment"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Spinner
+                android:id="@+id/work_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Cost Per Hours"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/etavailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Available"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <CheckBox
+            android:id="@+id/edt_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+
+            android:checked="true"
+            />
+
+        <Button
+            android:id="@+id/Btnaddwork"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="500dp"
+            android:background="@drawable/button"
+            android:text="Save"
+            />
+    </LinearLayout>
+</ScrollView>

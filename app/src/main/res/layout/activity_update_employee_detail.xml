@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".UpdateEmployeeDetailActivity"
+    android:background="@color/background">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/Imgback"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/backbutton" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:text="Update Work Profile"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:textSize="27sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Etid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="id"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Skill"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Spinner
+                android:id="@+id/skill_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:theme="@style/Spinner"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Experiance"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                />
+            <Spinner
+                android:id="@+id/experiance_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:theme="@style/Spinner"
+                android:autofillHints="Skills"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            >
+            <EditText
+                android:id="@+id/etjob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Work"
+                android:textColor="@color/colorAccent"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            >
+            <EditText
+                android:id="@+id/etlanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Language"
+                android:textColor="@color/colorAccent"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Payment"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                />
+            <Spinner
+                android:id="@+id/payment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:theme="@style/Spinner"
+                android:autofillHints="Payment"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="12dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Working Days"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                />
+            <Spinner
+                android:id="@+id/work_spinner"
+                android:layout_width="match_parent"
+                android:theme="@style/Spinner"
+                android:layout_height="40dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:textColorHint="@color/colorAccent"
+            >
+            <EditText
+                android:id="@+id/etcost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Cost Per Hours"
+                android:textColor="@color/colorAccent"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/edt_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:checked="true"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/BtnUpdate"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button"
+            android:text="Update"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+
+        <Button
+            android:id="@+id/Btndelete"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
